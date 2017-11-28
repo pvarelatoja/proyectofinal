@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../../resources/styles/stylebookPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Una Columna de Fuego</title>
+</head>
+
+<body>
+    <header>
+        <a href="../firstPage.html"><img src="../../resources/images/peekabook.jpg" alt="Peekabook logo" class="image-peek"></a>
+        <div class="rigth-float">
+            <a href="../firstPage.html" class="links">Inicio</a>
+            <a href="../miPerfil.html" class="links">Mi perfil</a>
+            <a href="../amigos.html" class="links">Amigos</a>
+        </div>
+    </header>
+    
+    <section id="pagebody">
+
+        <div class="book-section">
+            <img src="../../resources/images/columna.jpg" alt="It" class="book" />
+
+
+            <div class="info">
+                <label id="bookname" class="title-book" name="Una columna de fuego">Una columna de fuego</label><br>
+                <label style="font-size:20px">Saga Los pilares de la Tierra III</label><br>
+                <label class="autor" id="autor">de Ken Follett</label><br>
+                <p>
+                    Una columna de fuego arranca cuando el joven Ned Willard regresa a su hogar en Kingsbridge por Navidad. Corre el año 1558,
+                    un año que trastocará la vida de Ned y que cambiará Europa para siempre. Las antiguas piedras de la catedral
+                    de Kingsbridge contemplan una ciudad dividida por el odio religioso. Los principios elevados chocan con
+                    la amistad, la lealtad y el amor, y provocan derramamientos de sangre. Ned se encuentra de pronto en
+                    el bando contrario al de la muchacha con quien anhela casarse, Margery Fitzgerald. Cuando Isabel I llega
+                    al trono, toda Europa se vuelve en contra de Inglaterra. La joven monarca, astuta y decidida, organiza
+                    el primer servicio secreto del país para estar avisada ante cualquier indicio de intrigas homicidas,
+                    levantamientos o planes de invasión. En París, a la espera, se encuentra la seductora y obstinada María
+                    Estuardo, reina de los escoceses, en el seno de una familia francesa con una ambición descomunal. Proclamada
+                    legítima soberana de Inglaterra, María cuenta con sus propios partidarios, que conspiran para deshacerse
+                    de Isabel. Entretanto, Ned Willard busca a Jean Langlais, un personaje escurridizo y enigmático, sin
+                    saber que tras ese nombre falso se esconde un compañero de clase de su infancia, alguien que lo conoce
+                    demasiado bien. A lo largo de medio siglo turbulento, el amor entre Ned y Margery parece condenado al
+                    fracaso mientras el extremismo hace estallar la violencia desde Edimburgo hasta Ginebra. Isabel se aferra
+                    precariamente a su trono y a sus principios, protegida por un pequeño y entregado grupo de espías hábiles
+                    y agentes secretos valerosos. Los auténticos enemigos, tanto entonces como ahora, no son las religiones
+                    rivales. La verdadera batalla es la que enfrenta a quienes creen en la tolerancia y el acuerdo contra
+                    tiranos dispuestos a imponer sus ideas a todo el mundo... y a cualquier precio.</p>
+
+                <form onsubmit="AddToList(event, this)">
+                    <select id="list" class="list">
+            <option>Agregar a una lista</option>
+            <option>Quiero leerlo</option>
+            <option>Leído</option>
+        </select>
+                    <button type="submit" class="btn"><i class="fa fa-check-square-o"></i></button>
+                </form>
+                <div id="comments">
+    <label class="book-label-int">Deja tu comentario</label>
+    <textarea class="text"></textarea>
+    <button class="btn-comments">Enviar</button>
+</div>
+            </div>
+        </div>
+
+        <div class="side-section">
+
+
+            <div class="book-int">
+                <label class="book-label-int">Tambien podrías disfrutar estos títulos</label>
+                <div>
+                    <a href="./it.html"><img src="../../resources/images/it.jpg" alt="It" class="book-cover-int"></a>
+                    <a href="./valeria.html"><img src="../../resources/images/valeria.jpg" alt="Valeria no pudo bailar" class="book-cover-int"></a>
+                    <a href="./columna.html"><img src="../../resources/images/columna.jpg" alt="Una columna de fuego" class="book-cover-int"></a>
+                </div>
+            </div>
+
+            <div class="getit">
+                <label class="autor">¡Lo quiero!</label><br><br>
+                <a href="http://www.nosgustaleer.com/mvdcommerce/aproduct.aspx?144962" class="ref" target="_blank">Nos gusta leer</a>
+                <a href="http://www.libreriaelvirrey.com.uy/buscar?clave=Una%20columna%20de%20fuego_" class="ref" target="_blank">El Virrey</a>
+                <a href="http://www.isadoralibros.com.uy/sitio/libros/30113/una-columna-de-fuego-saga-los-pilares-de-la-tierra-3" class="ref"
+                    target="_blank">Isadora</a>
+            </div><br>
+
+        </div>
+    </section>
+
+    <script src="../../services/booksService.js"></script>
+    <script src="../../resources/scripts/script.js"></script>
+
+</body>
+
+</html>

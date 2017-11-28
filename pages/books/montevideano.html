@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../../resources/styles/stylebookPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Montevideano</title>
+</head>
+
+<body>
+    <header>
+        <a href="../firstPage.html"><img src="../../resources/images/peekabook.jpg" alt="Peekabook logo" class="image-peek"></a>
+        <div class="rigth-float">
+            <a href="../firstPage.html" class="links">Inicio</a>
+            <a href="../miPerfil.html" class="links">Mi perfil</a>
+            <a href="../amigos.html" class="links">Amigos</a>
+        </div>
+    </header>
+    <section id="pagebody">
+
+        <div class="book-section">
+    <img src="../../resources/images/montevideano.jpg" alt="Montevideano" class="book" />
+
+    
+
+
+    <div class="info">
+        <label class="title-book">Jaime Roos,</label><br>
+        <label class="title-book">El Montevideano</label><br>
+        <label class="autor">de Milita Alfaro</label><br>
+        <p>No es habitual que un artista tenga una vida tan compleja y sorprendente como su obra. Jaime Roos es uno de esos
+            contados casos. A partir de una nutrida documentación y de las intensas charlas mantenidas con el cantautor a
+            lo largo de dos años, la reconocida historiadora Milita Alfaro construye esta biografía profunda y por momentos
+            dramática, ilumi-nando su vasta trayectoria y descifrando las claves de su hondo impacto popular. La mirada resultante
+            aporta matices insospechados sobre temas tan decisivos como las raíces culturales de un pueblo, la cruda realidad
+            de los artistas tercermundistas o la visión de la vida expresada a través del propio idioma. Y a medida que el
+            relato avanza, del cruce deslumbrante de historias y memorias que propone la autora, van emergiendo los rasgos
+            esenciales de un universo artístico que se ha convertido en pieza insustituible de la identidad uruguaya. Por
+            la vida de Jaime Roos desfila la nuestra. Su regocijo y su dolor, sus ideas y sus ideales han sido y son los
+            de todos. El lector se reconocerá en ellos y quedará inevitablemente atrapado y conmocionado por estas páginas.
+        </p>
+
+
+    <form onsubmit="AddToList(event, this)">
+    <select  id="list" class="list">
+            <option>Agregar a una lista</option>
+            <option>Quiero leerlo</option>
+            <option>Leído</option>
+    </select>
+    
+    <button type="submit" class="btn"><i class="fa fa-check-square-o"></i></button>
+    </form>
+
+    <div id="comments">
+    <label class="book-label-int">Deja tu comentario</label>
+    <textarea class="text"></textarea>
+    <button class="btn-comments">Enviar</button>
+</div>
+</div>
+</div>
+
+<div class="side-section">
+<div class="book-int">
+    <label class="book-label-int">Tambien podrías disfrutar estos títulos</label>
+    <div>
+    <a href="./it.html"><img src="../../resources/images/it.jpg" alt="It" class="book-cover-int"></a>
+    <a href="./valeria.html"><img src="../../resources/images/valeria.jpg" alt="Valeria no pudo bailar" class="book-cover-int"></a>
+    <a href="./columna.html"><img src="../../resources/images/columna.jpg" alt="Una columna de fuego" class="book-cover-int"></a>
+    </div>
+</div>
+<div class="getit">
+        <label class="autor">¡Lo quiero!</label><br><br>
+        <a href="http://www.bookmark.com.uy/libros/autores-nacionales/jaime-roos-el-montevideano/" class="ref" target="_blank">Bookmark</a>
+        <a href="http://www.planetadelibros.com.uy/jaime-roos-el-montevideano-libro-252452.html" class="ref" target="_blank">PlanetaDeLibros</a>
+        <a href="http://www.mosca.com.uy/jaime-roos-montevideano/p" class="ref" target="_blank">Mosca</a>
+    </div>
+</div>
+    </section>
+    <script src="../../services/booksService.js"></script>
+    <script src="../../resources/scripts/script.js"></script>
+
+ <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+</script>
+
+</body>
+
+</html>

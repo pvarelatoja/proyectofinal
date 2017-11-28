@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../../resources/styles/stylebookPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Mil veces hasta siempre</title>
+</head>
+
+<body>
+    <header>
+        <a href="../firstPage.html"><img src="../../resources/images/peekabook.jpg" alt="Peekabook logo" class="image-peek"></a>
+        <div class="rigth-float">
+            <a href="../firstPage.html" class="links">Inicio</a>
+            <a href="../miPerfil.html" class="links">Mi perfil</a>
+            <a href="../amigos.html" class="links">Amigos</a>
+        </div>
+    </header>
+
+    <section id="pagebody">
+
+        <div class="book-section">
+            <img src="../../resources/images/milveces.jpg" alt="It" class="book" />
+
+
+            <div class="info">
+                <label id="bookname" class="title-book" name="Mil veces hasta siempre">Mil veces hasta siempre</label><br>
+                <label class="autor" id="author" value="John Green">de John Green</label><br>
+                <p>
+                    Aza nunca tuvo intención de investigar el misterio del multimillonario fugitivo Russell Pickett. Pero hay una recompensa
+                    de cien mil dólares en juego y su mejor y más intrépida amiga, Daisy, no está dispuesta a dejarla escapar.
+                    Así, juntas, recorrerán la corta distancia y las enormes diferencias que les separan del hijo de Russell
+                    Pickett, Davis. Aza lo está intentando. Trata de ser una buena hija, una buena amiga, una buena estudiante
+                    y, tal vez, incluso una buena detective, mientras vive en la espiral cada vez más estrecha de sus propios
+                    pensamientos.</p>
+
+                <form onsubmit="AddToList(event, this)">
+                    <select id="list" class="list">
+            <option>Agregar a una lista</option>
+            <option>Quiero leerlo</option>
+            <option>Leído</option>
+        </select>
+                    <button type="submit" class="btn"><i class="fa fa-check-square-o"></i></button>
+                </form>
+                <div id="comments">
+                    <label class="book-label-int">Deja tu comentario</label>
+                    <textarea class="text"></textarea>
+                    <button class="btn-comments">Enviar</button>
+
+
+                </div>
+                <div>
+                    <p><b>Victoria M. :</b> Muy bueno, me encantó el libro!</p>
+                    <p><b>María: </b> John Green no es de mis autores favoritos, pero este libro me gustó. Lo recomiendo</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="side-section">
+
+
+            <div class="book-int">
+                <label class="book-label-int">Tambien podrías disfrutar estos títulos</label>
+                <div>
+                    <a href="./nombredelviento.html"><img src="../../resources/images/nombredelviento.jpg" alt="ElNombre" class="book-cover-int"></a>
+                    <a href="./wonder.html"><img src="../../resources/images/wonder.jpg" alt="Wonder" class="book-cover-int"></a>
+                    <a href="./columna.html"><img src="../../resources/images/columna.jpg" alt="Una columna de fuego" class="book-cover-int"></a>
+                </div>
+            </div>
+
+            <div class="getit">
+                <label class="autor">¡Lo quiero!</label><br><br>
+                <a href="https://www.bookshop.com.uy/16664" class="ref" target="_blank">Bookshop</a>
+                <a href="http://www.libreriaelvirrey.com.uy/mil-veces-hasta-siempre/art_222846/" class="ref" target="_blank">El Virrey</a>
+                <a href="http://www.isadoralibros.com.uy/sitio/libros/31293/mil-veces-hasta-siempre" class="ref" target="_blank">Isadora</a>
+            </div><br>
+
+        </div>
+    </section>
+
+    <script src="../../services/booksService.js"></script>
+    <script src="../../resources/scripts/script.js"></script>
+
+</body>
+
+</html>

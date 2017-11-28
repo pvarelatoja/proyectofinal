@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../../resources/styles/stylebookPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Cien Años de Soledad</title>
+</head>
+
+<body>
+    <header>
+        <a href="../firstPage.html"><img src="../../resources/images/peekabook.jpg" alt="Peekabook logo" class="image-peek"></a>
+        <div class="rigth-float">
+            <a href="../firstPage.html" class="links">Inicio</a>
+            <a href="../miPerfil.html" class="links">Mi perfil</a>
+            <a href="../amigos.html" class="links">Amigos</a>
+        </div>
+    </header>
+    
+    <section id="pagebody">
+
+        <div class="book-section">
+            <img src="../../resources/images/cienaños.jpg" alt="It" class="book" />
+
+
+            <div class="info">
+                <label id="bookname" class="title-book" name="Cien años de Soledad">Cien años de Soledad</label><br>
+                <label class="autor" id="autor">de Gabriel García Marquez</label><br>
+                <p>
+                    Este clásico del siglo XX es el enorme y espléndido tapiz de una ya mítica familia en la mítica aldea de Macondo. La saga de los Buendía es referente imprescindible en el devenir de la narrativa latinoamericana.
+                   </p>
+
+                <form onsubmit="AddToList(event, this)">
+                    <select id="list" class="list">
+            <option>Agregar a una lista</option>
+            <option>Quiero leerlo</option>
+            <option>Leído</option>
+        </select>
+                    <button type="submit" class="btn"><i class="fa fa-check-square-o"></i></button>
+                </form>
+                <div id="comments">
+    <label class="book-label-int">Deja tu comentario</label>
+    <textarea class="text"></textarea>
+    <button class="btn-comments">Enviar</button>
+</div>
+            </div>
+        </div>
+
+        <div class="side-section">
+
+
+            <div class="book-int">
+                <label class="book-label-int">Tambien podrías disfrutar estos títulos</label>
+                <div>
+                    <a href="./masalla.html"><img src="../../resources/images/masalla.jpg" alt="Más allá del Invierno" class="book-cover-int"></a>
+                    <a href="./valeria.html"><img src="../../resources/images/valeria.jpg" alt="Valeria no pudo bailar" class="book-cover-int"></a>
+                    <a href="./rayuela.html"><img src="../../resources/images/rayuela.jpg" alt="Rayuela" class="book-cover-int"></a>
+                </div>
+            </div>
+
+            <div class="getit">
+                <label class="autor">¡Lo quiero!</label><br><br>
+                <a href="http://www.nosgustaleer.com/mvdcommerce/aproduct.aspx?144962" class="ref" target="_blank">Nos gusta leer</a>
+                <a href="http://www.libreriaelvirrey.com.uy/buscar?clave=Una%20columna%20de%20fuego_" class="ref" target="_blank">El Virrey</a>
+                <a href="http://www.isadoralibros.com.uy/sitio/libros/30113/una-columna-de-fuego-saga-los-pilares-de-la-tierra-3" class="ref"
+                    target="_blank">Isadora</a>
+            </div><br>
+
+        </div>
+    </section>
+
+    <script src="../../services/booksService.js"></script>
+    <script src="../../resources/scripts/script.js"></script>
+
+</body>
+
+</html>

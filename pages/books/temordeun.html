@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../../resources/styles/stylebookPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <script src="lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+    <title>El temor de un hombre sabio</title>
+</head>
+
+<body>
+    <header>
+        <a href="../firstPage.html"><img src="../../resources/images/peekabook.jpg" alt="Peekabook logo" class="image-peek"></a>
+        <div class="rigth-float">
+            <a href="../firstPage.html" class="links">Inicio</a>
+            <a href="../miPerfil.html" class="links">Mi perfil</a>
+            <a href="../amigos.html" class="links">Amigos</a>
+        </div>
+    </header>
+    <section id="pagebody">
+
+        <div class="book-section">
+
+    <img src="../../resources/images/eltemor.jpg" alt="El temor de un hombre sabio" class="book" />
+    
+
+    <div class="info">
+        <label id="bookname" class="title-book" name="El temor de un hombre sabio">El temor de un hombre sabio</label><br>
+        <label class="autor">de Patrick Rothfuss</label><br>
+        <p>«Todo hombre sabio teme tres cosas: la tormenta en el mar, la noche sin luna y la ira de un hombre amable.»
+
+El hombre había desaparecido. El mito no. Músico, mendigo, ladrón, estudiante, mago, trotamundos, héroe y asesino, Kvothe había borrado su rastro. Y ni siquiera ahora que le han encontrado, ni siquiera ni siquiera ahora que le han encontrado, ni siquiera ahora que las tinieblas invaden los rincones del mundo, está dispuesto a regresar. Pero su historia prosigue, la aventura continúa, y Kvothe seguirá contándola para revelar la verdad tras la leyenda.
+
+«Me llamo Kvothe. Quizá hayas oído hablar de mí...»</p>
+
+        <form id="form" onsubmit="AddToList(event, this)">
+        <select id="list" class="list">
+            <option>Agregar a una lista</option>
+            <option>Quiero leerlo</option>
+            <option>Leído</option>
+        </select>
+        <button type="submit" class="btn"><i class="fa fa-check-square-o"></i></button>
+        </form>
+
+        <div id="comments">
+    <label class="book-label-int">Deja tu comentario</label>
+    <textarea class="text"></textarea>
+    <button class="btn-comments">Enviar</button>
+</div>
+    </div>
+    </div>
+<div class="side-section">
+<div class="book-int">
+    <label class="book-label-int">Tambien podrías disfrutar estos títulos</label>
+    <div>
+    <a href="./nombredelviento.html"><img src="../../resources/images/nombredelviento.jpg" alt="It" class="book-cover-int"></a>
+    <a href="./valeria.html"><img src="../../resources/images/valeria.jpg" alt="Valeria no pudo bailar" class="book-cover-int"></a>
+    <a href="./columna.html"><img src="../../resources/images/columna.jpg" alt="Una columna de fuego" class="book-cover-int"></a>
+    </div>
+</div>
+<div class="getit">
+        <label class="autor">¡Lo quiero!</label><br><br>
+        <a href="https://www.amazon.es/El-Temor-Hombre-Sabio-Cronica/dp/0804169616"
+            class="ref" target="_blank">Amazon</a>
+        <a href="http://www.isadoralibros.com.uy/sitio/libros/6384/el-temor-de-un-hombre-sabio" class="ref" target="_blank">Isadora libros</a>
+        <a href="https://www.casadellibro.com/libro-el-temor-de-un-hombre-sabio/9788401339639/1872487" class="ref" target="_blank">Casa del libro</a>
+    </div>
+</div>
+</section>
+
+     <script src="../../services/booksService.js"></script>
+    <script src="../../resources/scripts/script.js"></script>
+
+ <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+</script>
+
+</body>
+</html>

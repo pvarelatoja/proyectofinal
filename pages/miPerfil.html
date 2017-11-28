@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    
+    <link rel="stylesheet" href="../resources/styles/stylefirstPage.css">
+    <script src="../services/booksService.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+    <title>Mi Perfil</title>
+</head>
+
+<body>
+    <header>
+        <a href="./firstPage.html"><img src="../resources/images/peekabook.jpg" alt="Peekabook logo" class="image-peek"></a>
+        <div class="rigth-float">
+            <a href="./firstPage.html" class="links">Inicio</a>
+            <a href="./miPerfil.html" class="links">Mi perfil</a>
+            <a href="./amigos.html" class="links">Amigos</a>
+        </div>
+    </header>
+
+    <div id="container">
+        <h1 class="title-page">Libros a leer</h1>
+        <table class="wishes">
+            <tr>
+                <th>Título</th>
+                <th>Autor</th>
+            </tr>
+            <tbody id="WishedBooks">
+                
+            </tbody>
+        </table>
+    </div>
+
+    
+    <script src="../resources/scripts/script.js"></script>
+
+
+</body>
+</html>

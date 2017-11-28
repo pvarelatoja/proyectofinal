@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../../resources/styles/stylebookPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Escrito en el agua</title>
+</head>
+
+<body>
+    <header>
+        <a href="../firstPage.html"><img src="../../resources/images/peekabook.jpg" alt="Peekabook logo" class="image-peek"></a>
+        <div class="rigth-float">
+            <a href="../firstPage.html" class="links">Inicio</a>
+            <a href="../miPerfil.html" class="links">Mi perfil</a>
+            <a href="../amigos.html" class="links">Amigos</a>
+        </div>
+    </header>
+
+    <section id="pagebody">
+        <div class="book-section">
+            <img src="../../resources/images/enelagua.jpg" alt="Escrito en el agua" class="book" />
+
+
+            <div class="info">
+                <label id="bookname" class="title-book" name="Escrito en el agua">Escrito en el agua</label><br>
+                <label class="autor">de Paula Hawkins</label><br>
+                <p>Tras cautivar a veinte millones de lectores en todo el mundo con La chica del tren, Paula Hawkins vuelve
+                    con una apasionante novela sobre las historias que nos contamos al recordar nuestro pasado y su poder
+                    para destruirnos. Pocos días antes de morir, Nel Abbott estuvo llamando a su hermana, pero Jules no cogió
+                    el teléfono, ignoró sus súplicas de ayuda. Ahora Nel está muerta. Dicen que saltó al río. Y Jules se
+                    ve arrastrada al pequeño pueblo de los veranos de su infancia, un lugar del que creía haber escapado,
+                    para cuidar de la adolescente que su hermana deja detrás. Pero Jules tiene miedo. Mucho miedo. Miedo
+                    al agua, miedo de sus recuerdos enterrados largo tiempo atrás, y miedo, sobre todo, de su certeza de
+                    que Nel nunca habría saltado… No te fíes nunca de una superficie en calma, no sabes lo que puede haber
+                    debajo.</p>
+
+                <form id="form" onsubmit="AddToList(event, this)">
+                    <select id="list" class="list">
+            <option>Agregar a una lista</option>
+            <option>Quiero leerlo</option>
+            <option>Leído</option>
+        </select>
+                    <button type="submit" class="btn"><i class="fa fa-check-square-o"></i></button>
+                </form>
+                <div id="comments">
+    <label class="book-label-int">Deja tu comentario</label>
+    <textarea class="text"></textarea>
+    <button class="btn-comments">Enviar</button>
+</div>
+            </div>
+        </div>
+
+        <div class="side-section">
+
+            <div class="book-int">
+                <label class="book-label-int">Tambien podrías disfrutar</label>
+                <div>
+                    <a href="./it.html"><img src="../../resources/images/it.jpg" alt="It" class="book-cover-int"></a>
+                    <a href="./valeria.html"><img src="../../resources/images/valeria.jpg" alt="Valeria no pudo bailar" class="book-cover-int"></a>
+                    <a href="./columna.html"><img src="../../resources/images/columna.jpg" alt="Una columna de fuego" class="book-cover-int"></a>
+                </div>
+            </div>
+            <div class="getit">
+                <label class="autor">¡Lo quiero!</label><br><br>
+                <a href="http://www.laskaramazov.com.uy/temas/crimen/Escrito-en-el-agua-9789504957492-detail.html" class="ref" target="_blank">Las Kamarazov</a>
+                <a href="http://www.bookmark.com.uy/libros/thriller/escrito-en-el-agua/" class="ref" target="_blank">Bookmark</a>
+                <a href="http://www.planetadelibros.com.uy/escrito-en-el-agua-libro-253957.html" class="ref" target="_blank">PlanetaDeLibros</a>
+            </div><br>
+        </div>
+    </section>
+
+
+    <script src="../../services/booksService.js"></script>
+    <script src="../../resources/scripts/script.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+    </script>
+
+</body>
+
+</html>

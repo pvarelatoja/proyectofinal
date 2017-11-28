@@ -1,0 +1,21 @@
+{
+  "books": [
+    {
+      "name": "Mas allá del viento",
+      "author": "Isabel Allende",
+      "window": "../pages/books/masalla.html",
+      "id": 1
+    },
+    {
+      "name": "Montevideano",
+      "author": "Milita Alfaro",
+      "window": "../pages/books/montevideano.html",
+      "id": 2
+    },
+    {
+      "name": "Mil veces hasta siempre",
+      "window": "file:///C:/Users/Admin.PORTABLE/Desktop/Proyecto/pages/books/milveces.html",
+      "id": 3
+    }
+  ]
+}

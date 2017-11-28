@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../../resources/styles/stylebookPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>It</title>
+</head>
+
+<body>
+    <header>
+        <a href="../firstPage.html"><img src="../../resources/images/peekabook.jpg" alt="Peekabook logo" class="image-peek"></a>
+        <div class="rigth-float">
+            <a href="../firstPage.html" class="links">Inicio</a>
+            <a href="../miPerfil.html" class="links">Mi perfil</a>
+            <a href="../amigos.html" class="links">Amigos</a>
+        </div>
+    </header>
+
+    <section id="pagebody">
+
+        <div class="book-section">
+
+            <img src="../../resources/images/it.jpg" alt="It" class="book" />
+
+
+            <div class="info">
+                <label id="bookname" class="title-book" name="It">It</label><br>
+                <label class="autor">de Stephen King</label><br>
+                <p><b>"Una de las novelas más ambiciosas de Stephen King, donde ha logrado perfeccionar las claves del género de terror."
+            </b>
+                </p>
+                <p>
+                    Tras lustros de tranquilidad y lejania una antigua promesa infantil les hace volver al lugar en el que vivieron su infancia
+                    y juventud como una terrible pesadilla. Regresan a Derry para enfrentarse con su pasado y enterrar definitivamente
+                    la amenaza que los amargó durante su niñez. Saben que pueden morir, pero son conscient es de que no conocerán
+                    la paz hasta que aquella cosa sea destruida para siempre. It es una de las novelas más ambiciosas de
+                    Stephen King, donde ha logrado perfeccionar de un modo muy personal las claves del género de terror.
+                </p>
+
+                <form onsubmit="AddToList(event, this)">
+                    <select id="list" class="list">
+            <option>Agregar a una lista</option>
+            <option>Quiero leerlo</option>
+            <option>Leído</option>
+        </select>
+                    <button type="submit" class="btn"><i class="fa fa-check-square-o"></i></button>
+                </form>
+                <div id="comments">
+    <label class="book-label-int">Deja tu comentario</label>
+    <textarea class="text"></textarea>
+    <button class="btn-comments">Enviar</button>
+</div>
+            </div>
+        </div>
+
+        <div class="side-section">
+            <div class="book-int">
+                <label class="book-label-int">Tambien podrías disfrutar estos títulos</label>
+                <div>
+                    <a href="./it.html"><img src="../../resources/images/it.jpg" alt="It" class="book-cover-int"></a>
+                    <a href="./valeria.html"><img src="../../resources/images/valeria.jpg" alt="Valeria no pudo bailar" class="book-cover-int"></a>
+                    <a href="./columna.html"><img src="../../resources/images/columna.jpg" alt="Una columna de fuego" class="book-cover-int"></a>
+                </div>
+            </div>
+            <div class="getit">
+                <label class="autor">¡Lo quiero!</label><br><br>
+                <a href="http://www.nosgustaleer.com/mvdcommerce/aproduct.aspx?138484" class="ref" target="_blank">Nos gusta leer</a>
+                <a href="https://www.casadellibro.com/libro-it/9788497593793/873687" class="ref" target="_blank">La casa del libro</a>
+                <a href="http://www.isadoralibros.com.uy/sitio/libros/15980/it-eso" class="ref" target="_blank">Isadora</a>
+            </div>
+        </div>
+
+    </section>
+    <script src="../../services/booksService.js"></script>
+    <script src="../../resources/scripts/script.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+    </script>
+</body>
+
+</html>

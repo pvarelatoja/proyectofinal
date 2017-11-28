@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../../resources/styles/stylebookPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Wonder</title>
+</head>
+
+<body>
+    <header>
+        <a href="../firstPage.html"><img src="../../resources/images/peekabook.jpg" alt="Peekabook logo" class="image-peek"></a>
+        <div class="rigth-float">
+            <a href="../firstPage.html" class="links">Inicio</a>
+            <a href="../miPerfil.html" class="links">Mi perfil</a>
+            <a href="../amigos.html" class="links">Amigos</a>
+        </div>
+    </header>
+    
+    <section id="pagebody">
+
+        <div class="book-section">
+            <img src="../../resources/images/Wonder.jpg" alt="Wonder" class="book" />
+
+
+            <div class="info">
+                <label id="bookname" class="title-book" name="Wonder">Wonder</label><br>
+                <label class="autor" id="autor">de R.J. Palacio</label><br>
+                <p>
+                   Su cara lo hace distinto y él solo quiere ser uno más. Camina siempre mirando al suelo, la cabeza gacha y el flequillo tratando en vano de esconder su rostro, pero, aun así, es objeto de miradas furtivas, susurros ahogados y codazos de asombro. August sale poco, su vida transcurre entre las acogedoras paredes de su casa, entre la compañía de su familia, su perra Daisy y las increíbles historias de La guerra de las galaxias.
+
+Este año todo va a cambiar, porque este año va a ir, por primera vez, a la escuela. Allí aprenderá la lección más importante de su vida, la que no se enseña en las aulas ni en los libros de texto: crecer en la adversidad, aceptarse tal como es, sonreír a los días grises y saber que, al final, siempre encontrará una mano amiga.</p>
+
+                <form onsubmit="AddToList(event, this)">
+                    <select id="list" class="list">
+            <option>Agregar a una lista</option>
+            <option>Quiero leerlo</option>
+            <option>Leído</option>
+        </select>
+                    <button type="submit" class="btn"><i class="fa fa-check-square-o"></i></button>
+                </form>
+                <div id="comments">
+    <label class="book-label-int">Deja tu comentario</label>
+    <textarea class="text"></textarea>
+    <button class="btn-comments">Enviar</button>
+</div>
+            </div>
+        </div>
+
+        <div class="side-section">
+
+
+            <div class="book-int">
+                <label class="book-label-int">Tambien podrías disfrutar estos títulos</label>
+                <div>
+                    <a href="./nombredelviento.html"><img src="../../resources/images/nombredelviento.jpg" alt="ElNombre" class="book-cover-int"></a>
+                    <a href="./milveces.html"><img src="../../resources/images/milveces.jpg" alt="Mil veces" class="book-cover-int"></a>
+                    <a href="./columna.html"><img src="../../resources/images/columna.jpg" alt="Una columna de fuego" class="book-cover-int"></a>
+                </div>
+            </div>
+
+            <div class="getit">
+                <label class="autor">¡Lo quiero!</label><br><br>
+                <a href="https://www.bookshop.com.uy/16448" class="ref" target="_blank">Bookshop</a>
+                <a href="http://www.libreriaelvirrey.com.uy/wonder-la-leccion-de-august/art_133180/" class="ref" target="_blank">El Virrey</a>
+                <a href="http://www.isadoralibros.com.uy/sitio/libros/30623/la-leccio-n-de-august-wonder-1-extraordinario" class="ref"
+                    target="_blank">Isadora</a>
+            </div><br>
+
+        </div>
+    </section>
+
+    <script src="../../services/booksService.js"></script>
+    <script src="../../resources/scripts/script.js"></script>
+
+</body>
+
+</html>

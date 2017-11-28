@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../../resources/styles/stylebookPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Valeria no pudo bailar</title>
+</head>
+
+<body>
+    <header>
+        <a href="../firstPage.html"><img src="../../resources/images/peekabook.jpg" alt="Peekabook logo" class="image-peek"></a>
+        <div class="rigth-float">
+            <a href="../firstPage.html" class="links">Inicio</a>
+            <a href="../miPerfil.html" class="links">Mi perfil</a>
+            <a href="../amigos.html" class="links">Amigos</a>
+        </div>
+    </header>
+    <section id="pagebody">
+
+    <div class="book-section">
+    <img src="../../resources/images/valeria.jpg" alt="Valeria no pudo bailar" class="book" />
+    
+
+    <div class="info">
+        <label id="bookname" class="title-book" name="Valeria no pudo bailar">Valeria no pudo bailar</label><br>
+        <label class="autor">de Cesar Bianchi</label><br>
+        <p>En este libro hay mujeres. Mujeres fuertes, luchadoras, con sueños y esperanzas. Mujeres cuya vida fue truncada por el simple hecho de ser mujeres.
+
+
+Estas páginas cuentan la historia de Dayana Yeyé, Melissa Ruggiero, Lola Chomnalez, Analía Perdomo, Valeria Sosa, Marta Martínez, Ofelia Chéchile, y también un relato con diferente final, el de Cinthya Silvera. Ellas enfrentaron la cara más terrible de nuestra sociedad, la que más nos duele ver y aceptar: la violencia de género.
+
+César Bianchi, a partir de una exhaustiva investigación y haciendo gala de un gran pulso narrativo, construye siete relatos atrapantes y conmovedores que nos permiten exorcizar el miedo y recuperar la esperanza en medio de tanto dolor. Quizás las heridas nunca terminen de cicatrizar, pero no todo estará perdido si enfrentamos aquello que no debe repetirse.</p>
+
+        <form onsubmit="AddToList(event, this)">
+        <select id="list" class="list">
+            <option>Agregar a una lista</option>
+            <option>Quiero leerlo</option>
+            <option>Leído</option>
+        </select>
+        <button type="submit" class="btn"><i class="fa fa-check-square-o"></i></button>
+        </form>
+
+        <div id="comments">
+    <label class="book-label-int">Deja tu comentario</label>
+    <textarea class="text"></textarea>
+    <button class="btn-comments">Enviar</button>
+</div>
+    </div>
+    </div>
+
+    <div class="side-section">
+<div class="book-int">
+    <label class="book-label-int">Tambien podrías disfrutar estos títulos</label>
+    <div>
+    <a href="./it.html"><img src="../../resources/images/it.jpg" alt="It" class="book-cover-int"></a>
+    <a href="./valeria.html"><img src="../../resources/images/valeria.jpg" alt="Valeria no pudo bailar" class="book-cover-int"></a>
+    <a href="./columna.html"><img src="../../resources/images/columna.jpg" alt="Una columna de fuego" class="book-cover-int"></a>
+    </div>
+</div>
+<div class="getit">
+        <label class="autor">¡Lo quiero!</label><br><br>
+        <a href="http://www.bookmark.com.uy/libros/autores-nacionales/valeria-no-pudo-bailar-y-otras-cronicas-de-femicidios-recientes/"
+            class="ref" target="_blank">Bookmark</a>
+        <a href="http://www.libreriaelvirrey.com.uy/valeria-no-pudo-bailar/art_219891/" class="ref" target="_blank">El Virrey</a>
+        <a href="http://www.nosgustaleer.com/mvdcommerce/aproduct.aspx?143304" class="ref" target="_blank">Nos gusta Leer</a>
+    </div>
+</div>
+</section><br>
+
+
+
+    
+     <script src="../../services/booksService.js"></script>
+    <script src="../../resources/scripts/script.js"></script>
+
+ <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+</script>
+</body>
+</html>
